@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-warning" data-bs-theme="warning">
+    <nav class="navbar navbar-expand-lg bg-warning sticky-top" data-bs-theme="warning">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Beranda RPL</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,13 +18,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">menu</a>
+                <a class="nav-link active" aria-current="page" href="#about">menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</Menu></a>
+                <a class="nav-link" href="#projects">Projects</Menu></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -32,8 +33,8 @@
       <!-- akhir navbar -->
 
       <!-- jumbroton -->
-      <section class="jumbotron text-center">
-        <img src="gundamTiger.jpg" alt="Prawira sebastian" width="200" class="rounded-circle img-thumbnail"/>
+      <section class="jumbotron text-center" >
+        <img src="gundamTiger.jpg" alt="Prawira sebastian" width="200"  data-aos="zoom-in-up" class="rounded-circle img-thumbnail"/>
         <h1 class="display-4">Prawira Sebastian</h1>
         <p class="lead">Programmer | desainer websate</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L24,181.3C48,203,96,245,144,266.7C192,288,240,288,288,261.3C336,235,384,181,432,170.7C480,160,528,192,576,176C624,160,672,96,720,64C768,32,816,32,864,80C912,128,960,224,1008,256C1056,288,1104,256,1152,224C1200,192,1248,160,1296,165.3C1344,171,1392,213,1416,234.7L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
@@ -42,7 +43,7 @@
 
       <!--about-->
       <section id="about">
-        <div class="conteiner">
+        <div class="conteiner" data-aos="fade-up">
           <div class="row text-center mb-3">
             <div class="col">
               <h2>About Me</h2>
@@ -138,6 +139,11 @@
         <p>created with love you <a href="https://www.instagram.com/prawira.s.htg/" class="text-white fw-bold">Prawira Sebastian</a></p>
       </footer>
       <!--akhir footer-->
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
